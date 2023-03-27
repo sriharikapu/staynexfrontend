@@ -1,0 +1,10 @@
+.destinationContainer{
+    padding-right: 0;
+    padding-left: 67.5px;
+    padding-top: 60px;
+    padding-bottom: 60px
+}
+.card-img-top{
+    width: 281px !important;
+    height: 320px;
+}

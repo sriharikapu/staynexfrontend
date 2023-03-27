@@ -1,0 +1,42 @@
+.card-container {
+    border: none !important;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #0E0E0B;
+    display: inline-block;
+}
+
+.slick-slide {
+    margin-right:50px;
+    width: 400px !important;
+}
+
+.card-body {
+    width: 285px !important;
+}
+.label{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-left: 0;
+    --bs-gutter-x: 0 !important;
+}
+.item {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.card-group {
+    overflow: hidden;
+}
