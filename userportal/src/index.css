@@ -1,0 +1,203 @@
+.headerinput {
+  border: none;
+  outline: none;
+  background: #EBEBEB;
+  padding: 8px 15px;
+  width: 300px;
+  border-radius: 20px;
+  border: 1px solid #E0E0E0;
+  opacity: 48%;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  background: #fff;
+  padding: 15px 20px;
+  width: 267px;
+  border-radius: 30px;
+  border: 1px solid lightgray;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.switcher {
+  width: 10px;
+  height: 7px;
+  background: gray;
+  border-radius: 3px;
+}
+
+.activeswitcher {
+  width: 15px;
+  height: 10px;
+  background: rgb(36, 35, 35);
+  border-radius: 5px;
+}
+
+.searchinput {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+}
+
+.searchfiltericon {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #868686;
+  cursor: pointer;
+}
+
+.confirmmodalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 10px;
+}
+
+.confirmmodal {
+  background: #fff;
+  width: 400px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.passmodal {
+  background: #fff;
+  width: 600px;
+  border-radius: 10px;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .passmodal {
+    width: 400px;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.favimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .favimg:nth-child(1) {
+  margin-top: -360px;
+}
+
+.favimg:nth-child(2) {
+  margin-top: -140px;
+}
+
+.favimg:nth-child(3) {
+  margin-top: 80px;
+}
+
+.favimg:nth-child(4) {
+  margin-top: 80px;
+}
+
+.favimg:nth-child(5) {
+  margin-top: -180px;
+}
+
+.favimg:nth-child(6) {
+  margin-top: -260px;
+} */
+
+.socialicon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.passvalue {
+  width: 60px;
+  border: 1px solid black;
+  padding: 7px 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.singleImage {
+  width: 20%;
+  height: 20%;
+}
+
+.small {
+  margin-right: -35px;
+  margin-bottom: -100px;
+}
+
+.fullboxtext {
+  color: #fff;
+  background: #E55735;
+  width: 250px;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.boxtext {
+  color: gray;
+  cursor: pointer;
+}
+
+.v_line {
+  border-left: 2px solid lightgray;
+  height: 35px;
+  margin: 0 auto;
+  width: 2px;
+  margin-top: 8px;
+}
+
+.inputform {
+  border: 1px solid lightgray;
+  outline: none;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 2px;
+}
+
+.profileinput {
+  border: 1px solid lightgray;
+  outline: none;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #cf4e30;
+}
+
+.imgslider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.hotelimg {
+  transition: transform .1s;
+  height: fit-content;
+}
+
+.hotelimg:hover {
+  transform: scale(1.3);
+}
