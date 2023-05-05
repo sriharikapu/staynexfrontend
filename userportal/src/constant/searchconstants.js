@@ -1,0 +1,67 @@
+export const searchResultHotel = [
+  {
+    id: "1",
+    img: "/assets/singlehotelimage/single1.svg",
+    name: "Nazeki Villa",
+    location: "Amber Villa, Indonesia",
+    from: "From $4,999",
+    bedrooms: "2 bedrooms",
+    bathroom: "2 bathrooms",
+    nights: "30 Nights",
+    sqft: "2300 sqft",
+    decription:
+      "See more of Labuan Bajo and spend less time traveling through it, when you stay at Mohini Komodo Resort and experience all the benefits of a truly central location.",
+  },
+  {
+    id: "2",
+    img: "/assets/singlehotelimage/single2.svg",
+    name: "Kunang Kunang Tent Resort",
+    location: "Banyuwangi, Indonesia",
+    from: "From $4,999",
+    bedrooms: "2 bedrooms",
+    bathroom: "2 bathrooms",
+    nights: "30 Nights",
+    sqft: "2300 sqft",
+    decription:
+      "See more of Labuan Bajo and spend less time traveling through it, when you stay at Mohini Komodo Resort and experience all the benefits of a truly central location.",
+  },
+  {
+    id: "3",
+    img: "/assets/singlehotelimage/single3.svg",
+    name: "Mohini  Komodo",
+    location: "Labuan Bajo, Indonesia",
+    from: "From $4,999",
+    bedrooms: "2 bedrooms",
+    bathroom: "2 bathrooms",
+    nights: "30 Nights",
+    sqft: "2300 sqft",
+    decription:
+      "See more of Labuan Bajo and spend less time traveling through it, when you stay at Mohini Komodo Resort and experience all the benefits of a truly central location.",
+  },
+  {
+    id: "4",
+    img: "/assets/singlehotelimage/single4.svg",
+    name: "Akazawa Onsen",
+    location: "Shizuoka  , Japan",
+    from: "From $4,999",
+    bedrooms: "2 bedrooms",
+    bathroom: "2 bathrooms",
+    nights: "30 Nights",
+    sqft: "2300 sqft",
+    decription:
+      "See more of Labuan Bajo and spend less time traveling through it, when you stay at Mohini Komodo Resort and experience all the benefits of a truly central location.",
+  },
+  {
+    id: "5",
+    img: "/assets/singlehotelimage/single5.svg",
+    name: "Blossom Villa",
+    location: "Kampong Krubong, Melaka",
+    from: "From $4,999",
+    bedrooms: "2 bedrooms",
+    bathroom: "2 bathrooms",
+    nights: "30 Nights",
+    sqft: "2300 sqft",
+    decription:
+      "See more of Labuan Bajo and spend less time traveling through it, when you stay at Mohini Komodo Resort and experience all the benefits of a truly central location.",
+  },
+];

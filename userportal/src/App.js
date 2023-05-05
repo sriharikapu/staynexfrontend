@@ -1,29 +1,28 @@
-import NavBarComponent from './common/NavBar/NavBar'
-import './App.css';
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
-import { HomePage } from './components/HomePage/homepage';
-import { HowItWorks } from './components/how-it-works';
-import { ResortsAndProperties } from './components/resorts-and-properties';
-import { LabsGroup } from './components/labs-group';
-import FooterComponent from './common/Footer/footer';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./screens/Home";
+import SearchResults from "./screens/SearchResults";
+import SingleHotel from "./screens/SingleHotel";
+import StaynexPass from "./screens/StaynexPass";
+import StaynexClub from "./screens/StaynexClub";
+import StaynexGlobal from "./screens/StaynexGlobal";
+import StaynexProperty from "./screens/StaynexProperty";
+import Profile from "./screens/Profile";
+
 
 function App() {
   return (
-    <>
-      <NavBarComponent></NavBarComponent>
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<HomePage />} />
-          <Route exact path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/resorts-and-properties" element={<ResortsAndProperties />} />
-          <Route path="/labs-club" element={<LabsGroup />} />
-        </Routes></BrowserRouter>
-      <FooterComponent></FooterComponent>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/search_result" element={<SearchResults />} />
+        <Route path="/single_hotel/:id" element={<SingleHotel />} />
+        <Route path="/staynexpass" element={<StaynexPass />} />
+        <Route path="/staynexclub" element={<StaynexClub />} />
+        <Route path="/staynexglobal" element={<StaynexGlobal />} />
+        <Route path="/staynexproperty" element={<StaynexProperty />} />
+        <Route path="/user_profile" element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
