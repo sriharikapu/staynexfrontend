@@ -2,7 +2,7 @@ import { Box, Button, Typography } from "@mui/material";
 import Template from "../components/Template";
 import DoneIcon from "@mui/icons-material/Done";
 import CloseIcon from "@mui/icons-material/Close";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 
 const StaynexProperty = () => {
   return (
@@ -35,8 +35,12 @@ const StaynexProperty = () => {
               complete – get started today.
             </Typography>
           </Box>
-          <Box flex={1}>
-            <img src="/assets/staynexproperty/rickshaw.svg" alt="rickshaw" />
+          <Box flex={1} width="100%">
+            <img
+              src="/assets/staynexproperty/rickshaw.svg"
+              alt="rickshaw"
+              width="100%"
+            />
           </Box>
 
           <Box
@@ -45,7 +49,7 @@ const StaynexProperty = () => {
             gap="5px"
             sx={{
               position: "absolute",
-              top: { xs: "40%", sm: "50px" },
+              top: { xs: "55%", sm: "50px" },
               right: { xs: "5px", sm: "80px" },
               background: "#fff",
               width: { xs: "95%", sm: "400px" },
@@ -352,14 +356,10 @@ const StaynexProperty = () => {
             this industry down
           </Typography>
 
-          <Box
-            display="flex"
-            justifyContent="center"
-            flexWrap="wrap"
-            gap="20px"
-          >
+          <Box display="flex" justifyContent="left" flexWrap="wrap" gap="20px">
             <Box
               sx={{
+                minWidth: { xs: "100%", sm: "31%" },
                 maxWidth: { xs: "100%", sm: "31%" },
                 textAlign: { xs: "center", sm: "left" },
               }}
@@ -371,6 +371,7 @@ const StaynexProperty = () => {
             </Box>
             <Box
               sx={{
+                minWidth: { xs: "100%", sm: "31%" },
                 maxWidth: { xs: "100%", sm: "31%" },
                 textAlign: { xs: "center", sm: "left" },
               }}
@@ -382,6 +383,7 @@ const StaynexProperty = () => {
             </Box>
             <Box
               sx={{
+                minWidth: { xs: "100%", sm: "31%" },
                 maxWidth: { xs: "100%", sm: "31%" },
                 textAlign: { xs: "center", sm: "left" },
               }}
@@ -394,6 +396,7 @@ const StaynexProperty = () => {
             </Box>
             <Box
               sx={{
+                minWidth: { xs: "100%", sm: "31%" },
                 maxWidth: { xs: "100%", sm: "31%" },
                 textAlign: { xs: "center", sm: "left" },
               }}
@@ -405,6 +408,7 @@ const StaynexProperty = () => {
             </Box>
             <Box
               sx={{
+                minWidth: { xs: "100%", sm: "31%" },
                 maxWidth: { xs: "100%", sm: "31%" },
                 textAlign: { xs: "center", sm: "left" },
               }}
@@ -417,6 +421,7 @@ const StaynexProperty = () => {
             </Box>
             <Box
               sx={{
+                minWidth: { xs: "100%", sm: "31%" },
                 maxWidth: { xs: "100%", sm: "31%" },
                 textAlign: { xs: "center", sm: "left" },
               }}
@@ -447,14 +452,15 @@ const StaynexProperty = () => {
           <Box
             display="flex"
             alignItems="center"
-            gap="20px"
+            gap="30px"
+            mb={4}
             sx={{ flexDirection: { xs: "column", sm: "row" } }}
           >
             <Box
               display="flex"
               alignItems="center"
               gap="10px"
-              sx={{ maxWidth: { xs: "100%", sm: "30%" } }}
+              sx={{ minWidth: { xs: "100%", sm: "33%" } }}
               border="1px solid lightgray"
               padding="20px"
               borderRadius="10px"
@@ -746,20 +752,24 @@ const StaynexProperty = () => {
               </Typography>
             </Box>
 
-            <Box display="flex" alignItems="center" gap="10px" mt={4} >
+            <Box display="flex" alignItems="center" gap="10px" mt={4}>
               <img
                 src="/assets/arsenal.png"
                 alt="arsenal"
                 width="60px"
                 height="70px"
               />
-              <Typography maxWidth="250px" >
+              <Typography maxWidth="250px">
                 Official hotel & resort membership partner of Arsenal FC
               </Typography>
             </Box>
           </Box>
-          <Box flex={1.7}>
-            <img src="/assets/staynexproperty/formbg.svg" alt="rickshaw" />
+          <Box width="100%" flex={1.7}>
+            <img
+              src="/assets/staynexproperty/formbg.svg"
+              alt="rickshaw"
+              width="100%"
+            />
           </Box>
 
           <Box
@@ -768,7 +778,7 @@ const StaynexProperty = () => {
             gap="5px"
             sx={{
               position: "absolute",
-              top: { xs: "50%", sm: "50px" },
+              top: { xs: "48%", sm: "50px" },
               right: { xs: "5px", sm: "80px" },
               background: "#fff",
               width: { xs: "95%", sm: "400px" },

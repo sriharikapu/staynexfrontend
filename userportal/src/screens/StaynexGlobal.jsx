@@ -1,14 +1,16 @@
 import { Box, Button, Typography } from "@mui/material";
 import Template from "../components/Template";
 import CloseIcon from "@mui/icons-material/Close";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 
 const StaynexGlobal = () => {
   return (
     <Template>
       <Box sx={{ overflowX: "hidden" }}>
         <Box sx={{ position: "relative" }}>
-          <img src="assets/staynexglobal/stadium.svg" alt="" />
+          <Box width="100%">
+            <img src="assets/staynexglobal/stadium.svg" alt="" width="100%" />
+          </Box>
           <Box
             width="100%"
             height="100%"
@@ -110,8 +112,13 @@ const StaynexGlobal = () => {
         </Box>
 
         <Box position="relative">
-          <img src="/assets/staynexglobal/redimg.svg" alt="red" />
-
+          <Box width="100%">
+            <img
+              src="/assets/staynexglobal/redimg.svg"
+              alt="red"
+              width="100%"
+            />
+          </Box>
           <Box
             width="100%"
             height="100%"
@@ -162,8 +169,14 @@ const StaynexGlobal = () => {
 
         <Box display="flex" sx={{ flexDirection: { xs: "column", sm: "row" } }}>
           <Box position="relative">
-            <img src="/assets/staynexglobal/redpattern.svg" alt="pattern" />
-
+            <Box width="100%" height="100%" sx={{ background: "red" }}>
+              <img
+                src="/assets/staynexglobal/redpattern.svg"
+                alt="pattern"
+                width="100%"
+                height="100%"
+              />
+            </Box>
             <Box
               width="100%"
               height="100%"
@@ -197,8 +210,12 @@ const StaynexGlobal = () => {
               </Box>
             </Box>
           </Box>
-          <Box>
-            <img src="/assets/staynexglobal/training.svg" alt="training" />
+          <Box width="100%">
+            <img
+              src="/assets/staynexglobal/training.svg"
+              alt="training"
+              width="100%"
+            />
           </Box>
         </Box>
 
@@ -255,9 +272,17 @@ const StaynexGlobal = () => {
               <Typography>Get exposure of 100 million fans</Typography>
             </Box>
           </Box>
-          <Box mt={2} >
-            <Typography textAlign="center" sx={{width: {xs: '400px', sm: '700px'}}}>The full Arsenal experience</Typography>
-            <Typography textAlign="center" sx={{width: {xs: '400px', sm: '700px'}}} >
+          <Box mt={2}>
+            <Typography
+              textAlign="center"
+              sx={{ width: { xs: "400px", sm: "700px" } }}
+            >
+              The full Arsenal experience
+            </Typography>
+            <Typography
+              textAlign="center"
+              sx={{ width: { xs: "400px", sm: "700px" } }}
+            >
               Get ready for a truly unforgettable experience. With match tickets
               to see the Gunners in action, exclusive experiences, and the
               chance to meet your favorite players, this package has it all.
