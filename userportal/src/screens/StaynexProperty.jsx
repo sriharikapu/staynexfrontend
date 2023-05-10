@@ -3,6 +3,7 @@ import Template from "../components/Template";
 import DoneIcon from "@mui/icons-material/Done";
 import CloseIcon from "@mui/icons-material/Close";
 import Footer from "../components/Footer";
+import { MainButton } from "../components/Buttons";
 
 const StaynexProperty = () => {
   return (
@@ -39,7 +40,7 @@ const StaynexProperty = () => {
             <img
               src="/assets/staynexproperty/rickshaw.svg"
               alt="rickshaw"
-              width="100%"
+              className="mainimages"
             />
           </Box>
 
@@ -49,7 +50,7 @@ const StaynexProperty = () => {
             gap="5px"
             sx={{
               position: "absolute",
-              top: { xs: "55%", sm: "50px" },
+              top: { xs: "45%", sm: "50px" },
               right: { xs: "5px", sm: "80px" },
               background: "#fff",
               width: { xs: "95%", sm: "400px" },
@@ -114,7 +115,7 @@ const StaynexProperty = () => {
         >
           <Box display="flex" alignItems="center" gap="20px">
             <img
-              src="/assets/arsenal.png"
+              src="/assets/arsenal.svg"
               alt="arsenal"
               width="40px"
               height="50px"
@@ -138,7 +139,7 @@ const StaynexProperty = () => {
             </Box>
             <CloseIcon />
             <img
-              src="/assets/arsenal.png"
+              src="/assets/arsenal.svg"
               alt="arsenal"
               width="70px"
               height="80px"
@@ -150,32 +151,26 @@ const StaynexProperty = () => {
           <Typography fontWeight="500" mt={2}>
             Join our Global Partnerships Program today
           </Typography>
-          <Box display="flex" alignItems="center" gap="5px" mt={1}>
+          <Box display="flex" alignItems="center" gap="5px" mt={3}>
             <DoneIcon />
-            <Typography fontSize="14px">
+            <Typography fontSize="14px" fontWeight="400" >
               Bringing together hospitality and football
             </Typography>
           </Box>
           <Box display="flex" alignItems="center" gap="5px" mt={1}>
             <DoneIcon />
-            <Typography fontSize="14px">
+            <Typography fontSize="14px" fontWeight="400" >
               Get exposure of 100 million fans
             </Typography>
           </Box>
-          <Box display="flex" alignItems="center" gap="5px" mt={1}>
+          <Box display="flex" alignItems="center" gap="5px" mt={1} mb={4}>
             <DoneIcon />
-            <Typography fontSize="14px">
+            <Typography fontSize="14px" fontWeight="400" >
               Offer once in a lifetime experiences
             </Typography>
           </Box>
 
-          <Button
-            variant="contained"
-            color="orange"
-            sx={{ color: "#fff", mt: 2 }}
-          >
-            Global Partnerships Program
-          </Button>
+          <MainButton variant="contained" text="Global Partnerships Program" bgcolor="orange" color="#fff" />
         </Box>
 
         <Box
@@ -187,33 +182,33 @@ const StaynexProperty = () => {
           padding="50px 0"
           sx={{ flexDirection: { xs: "column", sm: "row" } }}
         >
-          <Box mb={2} maxWidth="150px" textAlign="center">
-            <Typography variant="h6" fontWeight="700" mb={1}>
+          <Box mb={2} textAlign="center">
+            <Typography fontSize="22px" fontWeight="600" mb={1}>
               MAXIMIZE
             </Typography>
             <img src="/assets/staynexproperty/max.svg" alt="max" />
-            <Typography mt={1} fontWeight="500">
-              Sales, Revenue & Occupancy
+            <Typography mt={1} fontSize="14px" fontWeight="400">
+              Sales, Revenue & <br/> Occupancy
             </Typography>
           </Box>
 
-          <Box mb={2} maxWidth="150px" textAlign="center">
-            <Typography variant="h6" fontWeight="700" mb={1}>
+          <Box mb={2} textAlign="center">
+            <Typography fontSize="22px" fontWeight="600" mb={1}>
               GLOBAL REACH
             </Typography>
             <img src="/assets/staynexproperty/global.svg" alt="max" />
-            <Typography mt={1} fontWeight="500">
-              Sales, Revenue & Occupancy
+            <Typography mt={1} fontSize="14px" fontWeight="400">
+            Through extensive <br/> marketing
             </Typography>
           </Box>
 
-          <Box mb={2} maxWidth="150px" textAlign="center">
-            <Typography variant="h6" fontWeight="700" mb={1}>
+          <Box mb={2} textAlign="center">
+            <Typography fontSize="22px" fontWeight="600" mb={1}>
               REDUCE
             </Typography>
             <img src="/assets/staynexproperty/speaker.svg" alt="max" />
-            <Typography mt={1} fontWeight="500">
-              Sales, Revenue & Occupancy
+            <Typography mt={1} fontSize="14px" fontWeight="400">
+            Marketing & <br/> operational cost
             </Typography>
           </Box>
         </Box>
@@ -224,20 +219,21 @@ const StaynexProperty = () => {
           flexDirection="column"
           justifyContent="center"
           p={1}
-          mt={3}
+          mt={10}
+          mb={10}
         >
           <Typography
-            variant="h5"
-            fontWeight="700"
+            fontSize="22px"
+            fontWeight="600"
             textAlign="center"
-            maxWidth="350px"
+            mb={2}
           >
-            Which allows your property to create and maximize revenue
+            Which allows your property <br/> to create and maximize revenue
           </Typography>
 
           <Box
             display="flex"
-            alignItems="center"
+            alignItems="left"
             sx={{
               flexDirection: { xs: "column", sm: "row" },
               gap: { xs: "30px", sm: "100px" },
@@ -245,7 +241,7 @@ const StaynexProperty = () => {
             mt={4}
           >
             <Box display="flex" flexDirection="column" gap="30px">
-              <Box display="flex" alignItems="center" gap="5px">
+              <Box display="flex" alignItems="center" gap="15px">
                 <img src="/assets/staynexproperty/icon1.svg" alt="icon" />
                 <Typography fontWeight="500">
                   Create{" "}
@@ -253,7 +249,7 @@ const StaynexProperty = () => {
                   streams through Timeshare products
                 </Typography>
               </Box>
-              <Box display="flex" alignItems="center" gap="5px">
+              <Box display="flex" alignItems="center" gap="15px">
                 <img src="/assets/staynexproperty/icon2.svg" alt="icon" />
                 <Typography fontWeight="500">
                   <span style={{ color: "#E55735" }}>
@@ -262,7 +258,7 @@ const StaynexProperty = () => {
                   and off peak days
                 </Typography>
               </Box>
-              <Box display="flex" alignItems="center" gap="5px">
+              <Box display="flex" alignItems="center" gap="15px">
                 <img src="/assets/staynexproperty/icon3.svg" alt="icon" />
                 <Typography fontWeight="500">
                   <span style={{ color: "#E55735" }}>Increase</span> ADR and
@@ -272,7 +268,7 @@ const StaynexProperty = () => {
             </Box>
 
             <Box display="flex" gap="30px" flexDirection="column">
-              <Box display="flex" alignItems="center" gap="5px">
+              <Box display="flex" alignItems="center" gap="15px">
                 <img src="/assets/staynexproperty/icon4.svg" alt="icon" />
                 <Typography fontWeight="500">
                   <span style={{ color: "#E55735" }}>
@@ -281,14 +277,14 @@ const StaynexProperty = () => {
                   by monetizing amenities
                 </Typography>
               </Box>
-              <Box display="flex" alignItems="center" gap="5px">
+              <Box display="flex" alignItems="center" gap="15px">
                 <img src="/assets/staynexproperty/icon5.svg" alt="icon" />
                 <Typography fontWeight="500">
                   <span style={{ color: "#E55735" }}>Drive demand</span> and
                   exposure through Global Partners
                 </Typography>
               </Box>
-              <Box display="flex" alignItems="center" gap="5px">
+              <Box display="flex" alignItems="center" gap="15px">
                 <img src="/assets/staynexproperty/icon6.svg" alt="icon" />
                 <Typography fontWeight="500">
                   <span style={{ color: "#E55735" }}>Increase</span> in repeated
@@ -305,8 +301,8 @@ const StaynexProperty = () => {
             alignItems="start"
             justifyContent="center"
             flexDirection="column"
-            flex={1.5}
-            sx={{ background: "#EAE2DB" }}
+            flex={1}
+            sx={{ background: "url('/assets/staynexproperty/patternpink.svg')" }}
             p={4}
           >
             <Typography variant="h5" fontWeight="700" mb={3}>
@@ -347,88 +343,88 @@ const StaynexProperty = () => {
           textAlign="center"
           padding="10%"
         >
-          <Typography variant="h5" fontWeight="500" mb={2}>
+          <Typography fontSize="21px" fontWeight="600" mb={2}>
             How Staynex redefines timeshare
           </Typography>
-          <Typography maxWidth="650px" mb={8}>
+          <Typography fontSize="14px" fontWeight="400" mb={8}>
             Using Web 3 technology, we’ve studied the timeshare business,
-            keeping all the benefits and removing the frictions that have bogged
+            keeping all the benefits <br/> and removing the frictions that have bogged
             this industry down
           </Typography>
 
           <Box display="flex" justifyContent="left" flexWrap="wrap" gap="20px">
             <Box
               sx={{
-                minWidth: { xs: "100%", sm: "31%" },
-                maxWidth: { xs: "100%", sm: "31%" },
+                minWidth: { xs: "100%", sm: "32%" },
+                maxWidth: { xs: "100%", sm: "32%" },
                 textAlign: { xs: "center", sm: "left" },
               }}
             >
               <img src="/assets/staynexproperty/rede1.svg" alt="rede" />
-              <Typography fontSize="14px">
+              <Typography fontSize="13px" fontWeight="400" >
                 Peer-to-Peer -> Eliminates intermediaries
               </Typography>
             </Box>
             <Box
               sx={{
-                minWidth: { xs: "100%", sm: "31%" },
-                maxWidth: { xs: "100%", sm: "31%" },
+                minWidth: { xs: "100%", sm: "32%" },
+                maxWidth: { xs: "100%", sm: "32%" },
                 textAlign: { xs: "center", sm: "left" },
               }}
             >
               <img src="/assets/staynexproperty/rede2.svg" alt="rede" />
-              <Typography fontSize="14px">
-                Clear interface for customers to compare accommodation costs
+              <Typography fontSize="13px" fontWeight="400" >
+                Clear interface for customers to compare <br/> accommodation costs
               </Typography>
             </Box>
             <Box
               sx={{
-                minWidth: { xs: "100%", sm: "31%" },
-                maxWidth: { xs: "100%", sm: "31%" },
+                minWidth: { xs: "100%", sm: "32%" },
+                maxWidth: { xs: "100%", sm: "32%" },
                 textAlign: { xs: "center", sm: "left" },
               }}
             >
               <img src="/assets/staynexproperty/rede3.svg" alt="rede" />
-              <Typography fontSize="14px">
-                A real-time marketplace where users can trade their timeshare
+              <Typography fontSize="13px" fontWeight="400" >
+                A real-time marketplace where users can trade <br/> their timeshare
                 products
               </Typography>
             </Box>
             <Box
               sx={{
-                minWidth: { xs: "100%", sm: "31%" },
-                maxWidth: { xs: "100%", sm: "31%" },
+                minWidth: { xs: "100%", sm: "32%" },
+                maxWidth: { xs: "100%", sm: "32%" },
                 textAlign: { xs: "center", sm: "left" },
               }}
             >
               <img src="/assets/staynexproperty/rede4.svg" alt="rede" />
-              <Typography fontSize="14px">
+              <Typography fontSize="13px" fontWeight="400" >
                 Transparency of ownership on blockchain
               </Typography>
             </Box>
             <Box
               sx={{
-                minWidth: { xs: "100%", sm: "31%" },
-                maxWidth: { xs: "100%", sm: "31%" },
+                minWidth: { xs: "100%", sm: "32%" },
+                maxWidth: { xs: "100%", sm: "32%" },
                 textAlign: { xs: "center", sm: "left" },
               }}
             >
               <img src="/assets/staynexproperty/rede5.svg" alt="rede" />
-              <Typography fontSize="14px">
-                Nights tokenization enables properties of all sizes to
+              <Typography fontSize="13px" fontWeight="400" >
+                Nights tokenization enables properties of all sizes<br/> to
                 participate in the program
               </Typography>
             </Box>
             <Box
               sx={{
-                minWidth: { xs: "100%", sm: "31%" },
-                maxWidth: { xs: "100%", sm: "31%" },
+                minWidth: { xs: "100%", sm: "32%" },
+                maxWidth: { xs: "100%", sm: "32%" },
                 textAlign: { xs: "center", sm: "left" },
               }}
             >
               <img src="/assets/staynexproperty/rede6.svg" alt="rede" />
-              <Typography fontSize="14px">
-                Centralized platform with global and extensive marketing
+              <Typography fontSize="13px" fontWeight="400" >
+                Centralized platform with global and extensive <br/> marketing
               </Typography>
             </Box>
           </Box>
@@ -443,10 +439,10 @@ const StaynexProperty = () => {
           minHeight="500px"
           sx={{ background: "#F9F9F1" }}
         >
-          <Typography variant="h5" fontWeight="700">
+          <Typography fontSize="22px" fontWeight="600" mt={10} mb={0.5} >
             Staynex Passes
           </Typography>
-          <Typography fontWeight="500" mb={2}>
+          <Typography fontSize="14px" fontWeight="500" mb={6}>
             How Staynex Passes are created
           </Typography>
           <Box
@@ -462,8 +458,9 @@ const StaynexProperty = () => {
               gap="10px"
               sx={{ minWidth: { xs: "100%", sm: "33%" } }}
               border="1px solid lightgray"
-              padding="20px"
+              padding="10px"
               borderRadius="10px"
+              minHeight="72px"
             >
               <Typography
                 sx={{
@@ -475,8 +472,8 @@ const StaynexProperty = () => {
               >
                 1
               </Typography>
-              <Typography fontSize="14px" fontWeight="500">
-                We tokenize your ‘nights’ into Staynex Passes
+              <Typography fontSize="12px" fontWeight="700">
+                We tokenize your ‘nights’ into <strong> ''Staynex Passes'' </strong>
               </Typography>
             </Box>
 
@@ -486,7 +483,8 @@ const StaynexProperty = () => {
               gap="10px"
               sx={{ maxWidth: { xs: "100%", sm: "30%" } }}
               border="1px solid lightgray"
-              padding="20px"
+              padding="10px"
+              minHeight="72px"
               borderRadius="10px"
             >
               <Typography
@@ -499,9 +497,9 @@ const StaynexProperty = () => {
               >
                 2
               </Typography>
-              <Typography fontSize="14px" fontWeight="500">
+              <Typography fontSize="12px" fontWeight="700">
                 By allocating an amount of rooms inventory to be sold as
-                “Timeshare Memberships”
+                <strong> “Timeshare Memberships” </strong>
               </Typography>
             </Box>
 
@@ -511,7 +509,8 @@ const StaynexProperty = () => {
               gap="10px"
               sx={{ maxWidth: { xs: "100%", sm: "30%" } }}
               border="1px solid lightgray"
-              padding="20px"
+              padding="10px"
+              minHeight="72px"
               borderRadius="10px"
             >
               <Typography
@@ -524,13 +523,13 @@ const StaynexProperty = () => {
               >
                 3
               </Typography>
-              <Typography fontSize="14px" fontWeight="500">
-                These "Timeshare Products" don’t conflict with the usual Room
+              <Typography fontSize="12px" fontWeight="700">
+                These <strong> "Timeshare Products"</strong> don’t conflict with the usual Room
                 Sales.
               </Typography>
             </Box>
           </Box>
-
+          <Typography fontSize="10px" fontWeight="600" mt={2} mb={2} >Example</Typography>
           <Box
             display="flex"
             alignItems="center"
@@ -578,36 +577,35 @@ const StaynexProperty = () => {
             flex={2}
             sx={{ background: "#F7F6F5" }}
           >
-            <Typography variant="h5" fontWeight="700">
+            <Typography fontSize="22px" fontWeight="600">
               StayDay Pass
             </Typography>
-            <Typography fontWeight="500" mt={2}>
+            <Typography fontSize="16px" fontWeight="500" mt={2} mb={2} >
               Staynex enables the creation of Stayday Passes. Unlock new Annual
               Revenue from your hotel and resort amenities and facilities.
             </Typography>
             <Box display="flex" flexDirection="column" gap="30px" mt={2}>
-              <Box display="flex" alignItems="center" gap="5px">
+              <Box display="flex" alignItems="center" gap="15px">
                 <img src="/assets/staynexproperty/icon1.svg" alt="icon" />
-                <Typography fontWeight="500">
+                <Typography fontSize="14px" fontWeight="500">
                   Create{" "}
-                  <span style={{ color: "#E55735" }}>additional revenue</span>{" "}
-                  streams through Timeshare products
+                  <span style={{ color: "#E55735" }}>Maximize ancillary revenue</span>{" "}
+                   by selling out unused hotel facilities by increasing <br/> revenue beyond the room
                 </Typography>
               </Box>
-              <Box display="flex" alignItems="center" gap="5px">
+              <Box display="flex" alignItems="center" gap="15px">
                 <img src="/assets/staynexproperty/icon2.svg" alt="icon" />
-                <Typography fontWeight="500">
+                <Typography fontSize="14px" fontWeight="500">
                   <span style={{ color: "#E55735" }}>
                     Maximizing lower occupancy
                   </span>{" "}
-                  and off peak days
+                  and off-peak days
                 </Typography>
               </Box>
-              <Box display="flex" alignItems="center" gap="5px">
+              <Box display="flex" alignItems="center" gap="15px">
                 <img src="/assets/staynexproperty/icon3.svg" alt="icon" />
-                <Typography fontWeight="500">
-                  <span style={{ color: "#E55735" }}>Increase</span> ADR and
-                  Revenue
+                <Typography fontSize="14px" fontWeight="500">
+                  <span style={{ color: "#E55735" }}>Monetize your hotel amenities</span> by creating products that fit your property’s <br/> strengths. Fully utilize your gym, pool, restaurants etc
                 </Typography>
               </Box>
             </Box>
@@ -623,11 +621,11 @@ const StaynexProperty = () => {
           minHeight="550px"
           sx={{ background: "#F15A29", color: "#fff" }}
         >
-          <Typography variant="h5" fontWeight="500" mb={2}>
+          <Typography fontSize="20px" fontWeight="600" mb={1}>
             This allows us to give our users
           </Typography>
-          <Typography mb={6} maxWidth="400px">
-            Discover Switzerland’s best ski resorts and plan the perfect holiday
+          <Typography mb={6} fontSize="13px" fontWeight="400" >
+            Discover Switzerland’s best ski resorts and plan the <br/> perfect holiday
           </Typography>
 
           <Box
@@ -643,7 +641,7 @@ const StaynexProperty = () => {
               }}
             >
               <img src="/assets/staynexproperty/user1.svg" alt="rede" />
-              <Typography fontSize="14px">
+              <Typography fontSize="13px" fontWeight="500" >
                 The income stability of real estate
               </Typography>
             </Box>
@@ -654,7 +652,7 @@ const StaynexProperty = () => {
               }}
             >
               <img src="/assets/staynexproperty/user2.svg" alt="rede" />
-              <Typography fontSize="14px">
+              <Typography fontSize="13px" fontWeight="500" >
                 The ability to travel the world knowing you always have a ‘home’
                 in every country
               </Typography>
@@ -666,7 +664,7 @@ const StaynexProperty = () => {
               }}
             >
               <img src="/assets/staynexproperty/user3.svg" alt="rede" />
-              <Typography fontSize="14px">
+              <Typography fontSize="13px" fontWeight="500" >
                 The ability to liquidate anytime when needed
               </Typography>
             </Box>
@@ -677,7 +675,7 @@ const StaynexProperty = () => {
               }}
             >
               <img src="/assets/staynexproperty/user4.svg" alt="rede" />
-              <Typography fontSize="14px">
+              <Typography fontSize="13px" fontWeight="500" >
                 The ability to buy the ‘time’ you need at a property
               </Typography>
             </Box>
@@ -688,7 +686,7 @@ const StaynexProperty = () => {
               }}
             >
               <img src="/assets/staynexproperty/user5.svg" alt="rede" />
-              <Typography fontSize="14px">
+              <Typography fontSize="13px" fontWeight="500" >
                 Doesn’t force users to use up their vacations and rewards them
               </Typography>
             </Box>
@@ -699,7 +697,7 @@ const StaynexProperty = () => {
               }}
             >
               <img src="/assets/staynexproperty/user6.svg" alt="rede" />
-              <Typography fontSize="14px">
+              <Typography fontSize="13px" fontWeight="500" >
                 Increase in benefits the more the user purchases
               </Typography>
             </Box>
@@ -754,7 +752,7 @@ const StaynexProperty = () => {
 
             <Box display="flex" alignItems="center" gap="10px" mt={4}>
               <img
-                src="/assets/arsenal.png"
+                src="/assets/arsenal.svg"
                 alt="arsenal"
                 width="60px"
                 height="70px"
@@ -768,7 +766,7 @@ const StaynexProperty = () => {
             <img
               src="/assets/staynexproperty/formbg.svg"
               alt="rickshaw"
-              width="100%"
+              className="mainimages"
             />
           </Box>
 
@@ -779,7 +777,7 @@ const StaynexProperty = () => {
             sx={{
               position: "absolute",
               top: { xs: "48%", sm: "50px" },
-              right: { xs: "5px", sm: "80px" },
+              right: { xs: "5px", sm: "100px" },
               background: "#fff",
               width: { xs: "95%", sm: "400px" },
             }}

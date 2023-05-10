@@ -4,12 +4,14 @@ import { Link } from "react-router-dom";
 const SingleEvent = ({ hotel }) => {
   return (
     <Link className="link">
-      <Box width="370px" mt={1}>
-        <img src={hotel.src} alt="hotelimg" width="100%" />
-        <Typography variant="h6" fontWeight="500">
+      <Box mt={1}>
+        <Box maxWidth="100%" overflow="hidden" >
+        <img src={hotel.src} alt="hotelimg" width="100%" className="hotelimg" />
+        </Box>
+        <Typography fontSize="15px" fontWeight="500">
           {hotel.title}
         </Typography>
-        <Typography fontSize="14px" fontWeight="500">
+        <Typography fontSize="12px" fontWeight="400">
           {hotel.desc}
         </Typography>
       </Box>

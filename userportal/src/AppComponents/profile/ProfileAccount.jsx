@@ -18,33 +18,33 @@ const ProfileAccount = () => {
         <Avatar src='' alt='profile' />
       </Box>
 
-      <Box display="flex" gap="20px" flexWrap="wrap" pt={2} >
-        <Box>
+      <Box display="flex" gap="10px" flexWrap="wrap" pt={2} >
+        <Box mb={2} >
           <Typography>First name</Typography>
           <input type='text' placeholder='First Name' className='profileinput' />
         </Box>
 
-        <Box>
+        <Box mb={2} >
           <Typography>Last name</Typography>
           <input type='text' placeholder='Last name' className='profileinput' />
         </Box>
 
-        <Box>
+        <Box mb={2} >
           <Typography>Gender</Typography>
           <input type='text' placeholder='Gender' className='profileinput' />
         </Box>
 
-        <Box>
+        <Box mb={2} >
           <Typography>Passport number</Typography>
           <input type='text' placeholder='Passport number' className='profileinput' />
         </Box>
 
-        <Box>
+        <Box mb={2} >
           <Typography>Email</Typography>
           <input type='text' placeholder='brunofernie@gmail.com' className='profileinput' />
         </Box>
 
-        <Box>
+        <Box mb={2} >
           <Typography>Phone number</Typography>
           <input type='text' placeholder='Phone number' className='profileinput' />
         </Box>

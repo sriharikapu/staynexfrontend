@@ -27,10 +27,10 @@ const HomeHotels = () => {
 
   return (
     <Box sx={{padding: {xs: '70px 0px 20px 10px', sm : '50px 0 30px 70px'}}} borderBottom="1px solid lightgray">
-      <Typography fontSize="20px" fontWeight="700">
+      <Typography fontSize="22px" fontWeight="700" mb={1}>
         Stay at our finest destinations
       </Typography>
-      <Typography fontWeight="400" fontSize="14px" >
+      <Typography fontWeight="500" fontSize="14px" >
         Discover Switzerland’s best ski resorts and plan the perfect holiday
       </Typography>
 

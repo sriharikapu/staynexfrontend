@@ -7,12 +7,9 @@ import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import { useState } from "react";
 import SearchModal from "./SearchModal";
 import { useNavigate } from "react-router-dom";
-import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
-import { MainButton } from "../../components/Buttons";
 import { makeStyles } from "@mui/styles";
 
-const HeaderSearch = () => {
-  const [openModal, setOpenModal] = useState(false);
+const HeaderSearch = ({openModal, setOpenModal}) => {
   const [value, setValue] = useState([20, 567]);
 
   const handleChange = (event, newValue) => {
@@ -64,22 +61,30 @@ const HeaderSearch = () => {
           <input placeholder="Search anywhere" className="searchinput" />
         </Box>
         <Box display="flex" alignItems="center" gap="20px" mt={1} >
-          <div className="searchfiltericon" onClick={() => setOpenModal(!openModal)} >
+          <div className="searchfiltericon" onClick={(e) => {
+            e.stopPropagation()
+            setOpenModal(!openModal)}} >
             <HomeIcon sx={{fontSize: '14px'}} />
             <Typography fontSize="10px" >Villas</Typography>
           </div>
 
-          <div className="searchfiltericon" onClick={() => setOpenModal(!openModal)} >
+          <div className="searchfiltericon" onClick={(e) => {
+            e.stopPropagation()
+            setOpenModal(!openModal)}} >
             <HotelIcon sx={{fontSize: '14px'}} />
             <Typography fontSize="10px" >Villas</Typography>
           </div>
 
-          <div className="searchfiltericon" onClick={() => setOpenModal(!openModal)} >
+          <div className="searchfiltericon" onClick={(e) => {
+            e.stopPropagation()
+            setOpenModal(!openModal)}} >
             <SquareFootIcon sx={{fontSize: '14px'}} />
             <Typography fontSize="10px" >Villas</Typography>
           </div>
 
-          <div className="searchfiltericon" onClick={() => setOpenModal(!openModal)} >
+          <div className="searchfiltericon" onClick={(e) => {
+            e.stopPropagation()
+            setOpenModal(!openModal)}} >
             <LocalOfferIcon sx={{fontSize: '14px'}} />
             <Typography fontSize="10px" >Villas</Typography>
           </div>
@@ -191,15 +196,6 @@ const HeaderSearch = () => {
                     borderRadius="3px"
                   >{`$${value[1]}`}</Typography>
                 </Box>
-              </Box>
-              <Box display="flex" alignItems="center" justifyContent="center" mb={1} >
-                <MainButton
-                  text="Apply"
-                  color="#fff"
-                  bgcolor="orange"
-                  variant="contained"
-                  onClick={() => setOpenModal(false)}
-                />
               </Box>
             </Box>
         </div>

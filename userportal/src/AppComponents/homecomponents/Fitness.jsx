@@ -21,14 +21,11 @@ const Fitness = () => {
         >
           <Box display="flex" alignItems="center" gap="20px" mb={2}>
             <Box display="flex" alignItems="center" gap="10px">
-              <img src="/assets/logowhite.svg" alt="logowhite" />
-              <Typography variant="h5" fontWeight="700" sx={{ color: "#fff" }}>
-                staynex
-              </Typography>
+              <img src="/assets/logowhite.svg" alt="logowhite" width="115px" />
             </Box>
             <ClearIcon sx={{ color: "#fff" }} />
             <img
-              src="/assets/arsenal.png"
+              src="/assets/arsenal.svg"
               alt="arsenal"
               width={60}
               height={60}
@@ -67,6 +64,7 @@ const Fitness = () => {
             text="Global partnerships"
             color="#000"
             bgcolor="white"
+            width="200px"
           />
         </Box>
       </Box>

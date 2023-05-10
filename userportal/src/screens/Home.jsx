@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import HeaderViewer from "../AppComponents/./homecomponents/HeaderViewer";
 import HeaderSearch from "../AppComponents/./homecomponents/HeaderSearch";
 import HomeHotels from "../AppComponents/./homecomponents/HomeHotels";
@@ -11,6 +11,8 @@ import Footer from "../components/Footer";
 import Template from "../components/Template";
 
 const Home = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const [numberImg, setNumberImg] = useState(1)
   const scrollRef = useRef(null);
 
   const handleHorizantalScroll = (element, speed, distance, step) => {
@@ -23,6 +25,20 @@ const Home = () => {
       }
     }, speed);
   };  
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if(numberImg === 3) {
+        setNumberImg(1)
+      }
+      else {
+        setNumberImg(numberImg + 1)
+      }
+    }, 3000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [numberImg]);
 
   let lastscrollvalue;
 
@@ -40,22 +56,22 @@ const Home = () => {
         handleHorizantalScroll(scrollRef.current, 10, 0.1, 10)  
       }}} >
     <Template>
-      <Box>
+      <div onClick={() => setOpenModal(false)} >
         <Box
           display="flex"
-          sx={{ flexDirection: { xs: "column", md: "row" }, height: "100%" }}
+          sx={{ flexDirection: { xs: "column", md: "row" } }}
         >
-          <Box flex={2.5} sx={{ background: "#EAE2DB" }}>
+          <Box flex={2.5} sx={{ background: "#EAE2DB", maxHeight: '348px' }}>
             <HeaderViewer />
           </Box>
 
-          <Box flex={7.5} position="relative" height="100%">
+          <Box flex={7.5} position="relative" >
             <img
-              src="/assets/headerimg.svg"
+              src={`/assets/headerimg${numberImg}.svg`}
               alt="headerimg"
-              style={{ minHeight: "100%", minWidth: "100%", maxWidth: "100%" }}
+              style={{display: 'block', minWidth: '100%'}}
             />
-            <HeaderSearch />
+            <HeaderSearch openModal={openModal} setOpenModal={setOpenModal} />
           </Box>
         </Box>
         <HomeHotels />
@@ -64,7 +80,7 @@ const Home = () => {
         <HomeEvents />
         <StayConnected />
         <Footer />
-      </Box>
+      </div>
     </Template>
     </div>
   );

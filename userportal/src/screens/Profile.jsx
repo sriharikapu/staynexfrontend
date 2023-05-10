@@ -16,7 +16,7 @@ const Profile = () => {
         <Box sx={{background: "#fceeea"}} >
         <Box
           sx={{
-            padding: { xs: "20px", sm: "30px 40px" },
+            padding: { xs: "20px", sm: "30px 120px" },
             flexDirection: { xs: "column", sm: "row" },
             maxWidth: {xs: '1000px',lg: '100%' },
             margin: 'auto'
@@ -78,15 +78,15 @@ const Profile = () => {
         </Box>
         </Box>
 
-        <Box sx={{padding: {xs: '0 10px', sm: '0 40px'}, maxWidth: '1000px', margin: 'auto'}} >
-          <Box display="flex" alignItems="center" gap="30px">
+        <Box display="flex" alignItems="center" gap="30px" sx={{padding: { xs: "0", sm: "0px 120px 15px 120px" }, background: '#F7F6F5' }} >
             {profileTab.map((tab) => (
               <div
                 key={tab.id}
                 style={{
                   padding: "5px",
-                  fontWeight: "500",
+                  fontWeight: "600",
                   marginTop: "10px",
+                  fontSize: '13px',
                   cursor: "pointer",
                   borderBottom: `${
                     switchTabs === tab.id ? "3px solid #E55735" : ""
@@ -98,6 +98,9 @@ const Profile = () => {
               </div>
             ))}
           </Box>
+
+        <Box sx={{padding: {xs: '0 10px', sm: '0 40px'}, maxWidth: '1000px', margin: 'auto'}} >
+          
           {switchTabs === 1 && <ProfilePass />}
           {switchTabs === 2 && <ProfileRedeem />}
           {switchTabs === 3 && <ProfileAccount />}

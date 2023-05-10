@@ -39,7 +39,7 @@ const Header = () => {
           alignItems="center"
           justifyContent="space-between"
           width="100%"
-          sx={{ padding: { xs: "0", sm: "0 50px" } }}
+          sx={{ padding: { xs: "0", sm: "0 100px" } }}
         >
           <Box display="flex" alignItems="center" gap={2}>
             <Link to="/" className="link" >

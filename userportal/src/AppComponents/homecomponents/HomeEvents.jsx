@@ -25,11 +25,11 @@ const HomeEvents = () => {
   };
 
   return (
-    <Box sx={{ padding: {xs: '70px 0px 20px 10px', sm : '30px 0 30px 50px'} }}>
-      <Typography variant="h5" fontWeight="700">
+    <Box sx={{ padding: {xs: '70px 0px 20px 10px', sm : '30px 0 30px 50px'} }} mt={6} >
+      <Typography variant="h5" fontWeight="700" mb={1} >
         Events and stuff
       </Typography>
-      <Typography>
+      <Typography fontWeight="500" >
         Discover Switzerland’s best ski resorts and plan the perfect holiday
       </Typography>
 
@@ -43,7 +43,9 @@ const HomeEvents = () => {
       >
         {eventlist.map((event) => (
           <Box width={281} mr={1} >
-            <img src={event.src} alt="event" />
+            <Box overflow="hidden" >
+            <img src={event.src} alt="event" className="hotelimg" />
+            </Box>
             <Typography fontWeight="500">{event.name}</Typography>
             <Typography fontSize="12px" fontWeight="500">
               {event.time}

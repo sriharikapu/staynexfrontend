@@ -19,11 +19,8 @@ const StaynexPass = () => {
         >
           <Box display="flex" alignItems="center" gap="10px">
             <img src="/assets/logowhite.svg" alt="logo" />
-            <Typography variant="h4" fontWeight="500">
-              staynex
-            </Typography>
           </Box>
-          <Typography variant="h4" fontWeight="500">
+          <Typography fontSize="27px" fontWeight="500">
             The world is your home
           </Typography>
         </Box>
@@ -32,11 +29,12 @@ const StaynexPass = () => {
             src="assets/staynexpass/back.jpg"
             alt=""
             width="100%"
-            height="600px"
+            height="650px"
+            style={{display: 'block'}}
           />
           <Box
             width="100%"
-            height="600px"
+            height="650px"
             sx={{
               background: "red",
               position: "absolute",
@@ -58,26 +56,26 @@ const StaynexPass = () => {
               top: "0",
               left: "0",
             }}
+            mt={2}
           >
             <Box
               display="flex"
               flexDirection="column"
               alignItems="center"
-              maxWidth="600px"
               gap="10px"
             >
-              <Typography variant="h4" fontWeight="500">
+              <Typography fontSize="20px" fontWeight="700">
                 OFFICIAL PARTNER
               </Typography>
               <img
-                src="/assets/arsenal.png"
+                src="/assets/arsenal.svg"
                 alt="arsenal"
                 width={150}
                 height={150}
               />
-              <Typography textAlign="center">
+              <Typography fontSize="18px" fontWeight="400" textAlign="center">
                 We're proud to announce Staynex as Arsenal FC's Official Hotel
-                and Resort Membership NFT Partner. Stay tuned to enjoy an
+                and Resort <br/> Membership NFT Partner. Stay tuned to enjoy an
                 experience of a lifetime!
               </Typography>
             </Box>
@@ -96,7 +94,7 @@ const StaynexPass = () => {
                   borderRadius: "10px",
                 }}
               >
-                <Typography fontSize="12px" textAlign="center">
+                <Typography fontSize="12px" fontWeight="500" textAlign="center">
                   Stay at your most favourite places in London
                 </Typography>
               </Box>
@@ -108,7 +106,7 @@ const StaynexPass = () => {
                   borderRadius: "10px",
                 }}
               >
-                <Typography fontSize="12px" textAlign="center">
+                <Typography fontSize="12px" fontWeight="500" textAlign="center">
                   Watch Arsenal FC matches at the Emirates Stadium
                 </Typography>
               </Box>
@@ -120,7 +118,7 @@ const StaynexPass = () => {
                   borderRadius: "10px",
                 }}
               >
-                <Typography fontSize="12px" textAlign="center">
+                <Typography fontSize="12px" fontWeight="500" textAlign="center">
                   Get a 'behind-the-scenes' tour of London Colney
                 </Typography>
               </Box>
@@ -133,7 +131,7 @@ const StaynexPass = () => {
                   borderRadius: "10px",
                 }}
               >
-                <Typography fontSize="12px" textAlign="center">
+                <Typography fontSize="12px" fontWeight="500" textAlign="center">
                   And a whole lot more!
                 </Typography>
               </Box>
@@ -142,15 +140,13 @@ const StaynexPass = () => {
 
           <Box
             display="flex"
-            alignItems="center"
-            mt={-0.5}
             sx={{ flexDirection: { xs: "column-reverse", sm: "row" } }}
           >
-            <Box flex={3} maxWidth="100%" position="relative">
+            <Box flex={3} maxWidth="100%" position="relative" >
               <img
                 src="/assets/staynexpass/pattern.svg"
                 alt="pattern"
-                width="100%"
+                className="passimges"
               />
               <Box
                 display="flex"
@@ -183,22 +179,22 @@ const StaynexPass = () => {
                     nights allocated to you at the property.
                   </Typography>
                   <Box mt={6} mb={2}>
-                    <Typography variant="h6" fontWeight="500">
+                    <Typography fontSize="14px" fontWeight="600">
                       PRESS AND MEDIA
                     </Typography>
                     <Box display="flex" alignItems="center" gap="30px">
                       <Button
                         variant="contained"
                         color="orange"
-                        sx={{ width: "200px", lineHeight: "15px" }}
+                        sx={{ width: "200px", lineHeight: "15px", textAlign: 'left' }}
                       >
                         Download Staynex's Official Press Kit
                       </Button>
                       <Box display="flex" alignItems="center" gap="10px">
                         <TwitterIcon />
                         <Box>
-                          <Typography>Follow us</Typography>
-                          <Typography>@staynexcom</Typography>
+                          <Typography mb={-1} fontWeight="500" >Follow us</Typography>
+                          <Typography fontWeight="600" >@staynexcom</Typography>
                         </Box>
                       </Box>
                     </Box>
@@ -207,11 +203,11 @@ const StaynexPass = () => {
               </Box>
             </Box>
 
-            <Box flex={2} maxWidth="100%">
+            <Box flex={2} maxWidth="100%"   >
               <img
                 src="/assets/staynexpass/house.svg"
                 alt="back"
-                width="100%"
+                className="passimges"
               />
             </Box>
           </Box>
@@ -222,10 +218,11 @@ const StaynexPass = () => {
             justifyContent="center"
             flexDirection="column"
             minHeight="650px"
+            p={2}
             sx={{ background: "#FF672D", color: "#fff" }}
           >
             <Box display="flex" justifyContent="flex-start" mb={3} mt={2}>
-              <Typography variant="h5" fontWeight="500">
+              <Typography variant="h5" fontWeight="500"  >
                 Imagine an NFT that allows you to
               </Typography>
             </Box>
@@ -249,8 +246,8 @@ const StaynexPass = () => {
           <Box
             display="flex"
             alignItems="center"
-            sx={{ flexDirection: { xs: "column-reverse", md: "row" } }}
-            mt={2}
+            sx={{ flexDirection: { xs: "column-reverse", md: "row" }, background: '#F7F6F5'}}
+            pt={10}
           >
             <Box flex={2.5} maxWidth="100%">
               <img
@@ -286,10 +283,10 @@ const StaynexPass = () => {
                 mt={2}
               >
                 {passiconlist.map((icon) => (
-                  <Box maxWidth="250px">
+                  <Box maxWidth="250px" mb={4}>
                     <img src={icon.src} alt="icon" />
-                    <Typography fontWeight="500">{icon.title}</Typography>
-                    <Typography fontSize="12px">{icon.desc}</Typography>
+                    <Typography fontSize="14px" fontWeight="700" mt={1} >{icon.title}</Typography>
+                    <Typography fontSize="10px" mt={1} >{icon.desc}</Typography>
                   </Box>
                 ))}
               </Box>
@@ -326,7 +323,7 @@ const StaynexPass = () => {
               <img
                 src="/assets/staynexpass/boatimg.svg"
                 alt="boat"
-                width="100%"
+                className="passimges"
               />
             </Box>
           </Box>

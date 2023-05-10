@@ -8,8 +8,8 @@ const HeaderViewer = () => {
       display="flex"
       flexDirection="column"
       justifyContent="space-between"
-      height="100%"
       gap="10px"
+      minHeight="100%"
       p={4}
     >
       {checkSwitch === 1 && <Box>

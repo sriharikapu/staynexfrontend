@@ -49,7 +49,26 @@ export const hotellist = [
         src: '/assets/hotelsimages/hotel2.svg',
         location: 'Shizuoka, Japan'
     },
-    
+    {
+        id: '6',
+        name: 'Be Home',
+        bedroom: '2',
+        bathroom: '1',
+        sqft: '950',
+        from: '4,999',
+        src: '/assets/hotelsimages/hotel4.svg',
+        location: 'Phuket, Thailand'
+    },
+    {
+        id: '7',
+        name: 'Nazeki Villa',
+        bedroom: '2',
+        bathroom: '1',
+        sqft: '950',
+        from: '4,999',
+        src: '/assets/hotelsimages/hotel1.svg',
+        location: 'Amber Villa, Indonesia'
+    },    
 ]
 
 export const favoritelist = [
