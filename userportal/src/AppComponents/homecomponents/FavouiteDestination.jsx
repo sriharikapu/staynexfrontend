@@ -13,11 +13,12 @@ const FavouiteDestination = ({ scrollRef }) => {
         flexDirection="column"
         alignItems="center"
         mt={15}
+        mb={15}
       >
-        <Typography variant="h5" fontWeight="700">
+        <Typography variant="h5" fontWeight="700" mb={1.5} >
           Favorite Destinations
         </Typography>
-        <Typography>
+        <Typography fontWeight="500" >
           Discover Switzerland’s best ski resorts and plan the perfect holiday
         </Typography>
       </Box>
@@ -32,7 +33,7 @@ const FavouiteDestination = ({ scrollRef }) => {
         {favoritelist.map((fav) => (
           <div className="favimg">
             <img src={fav.src} alt="favimg" />
-            <Typography fontSize="14px" fontWeight="500">
+            <Typography fontSize="14px" fontWeight="500" mt={8} >
               {fav.name}
             </Typography>
           </div>

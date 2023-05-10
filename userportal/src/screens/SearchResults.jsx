@@ -47,7 +47,7 @@ const SearchResults = () => {
           height="110px"
           justifyContent="space-between"
           sx={{
-            background: "#EAE2DB",
+            background: "url('/assets/patternsearch.svg')",
             flexDirection: { xs: "column", md: "row" },
             padding: { xs: "5px 0", md: "0 10%" },
           }}

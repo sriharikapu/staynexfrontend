@@ -62,11 +62,12 @@ const StaynexClub = () => {
               src="/assets/staynexclub/headerimg.svg"
               alt="header"
               width="100%"
+              style={{ display: "block" }}
             />
           </Box>
         </Box>
 
-        <Box display="flex" justifyContent="center" mt={8}>
+        <Box display="flex" justifyContent="center" mt={8} mb={8}>
           <Box
             display="flex"
             flexDirection="column"
@@ -104,53 +105,60 @@ const StaynexClub = () => {
           textAlign="center"
           sx={{ background: "#F9F9F1", padding: "60px 0" }}
         >
-          <Typography variant="h5" fontWeight="700">
+          <Typography variant="h5" fontWeight="700" mt={4} >
             Staynex Explorer Program (Q1 2023)
           </Typography>
-          <Typography fontWeight="500" fontSize="14px" mb={3}>
+          <Typography fontWeight="400" fontSize="14px" mb={6} mt={2}>
             We reward our Staynex Pass holders with more rewards! By purchasing
             the Staynex PFP, users have their passport that shows
           </Typography>
           <Box
-            display="flex"
-            justifyContent="space-between"
             sx={{
               padding: "0 60px",
               borderBottom: "1px solid lightgray",
-              flexDirection: { xs: "column", md: "row" },
-              alignItems: { xs: "center", md: "end" },
             }}
           >
-            {cardList.map((card) => (
-              <AnalyticsBox
-                name={card.name}
-                days={card.day}
-                nights={card.night}
-                fullBox={fullBox}
-                setFullBox={setFullBox}
-              />
-            ))}
+            <Box
+              display="flex"
+              justifyContent="space-between"
+              sx={{
+                maxWidth: {xs: "100%", sm: "80%"},
+                flexDirection: { xs: "column", md: "row" },
+                alignItems: { xs: "center", md: "end" },
+                margin: "auto",
+              }}
+            >
+              {cardList.map((card) => (
+                <AnalyticsBox
+                  name={card.name}
+                  days={card.day}
+                  nights={card.night}
+                  fullBox={fullBox}
+                  setFullBox={setFullBox}
+                />
+              ))}
+            </Box>
           </Box>
-          <Typography fontWeight="500" fontSize="14px" mt={3}>
-            By buying more NFTs, users create a collection and portfolio of
-            timeshare stays globally, by reaching 365 nights.{" "}
+          <Typography fontWeight="500" fontSize="14px" mt={8}>
+            By buying more NFTs, users create a collection and portfolio <br />{" "}
+            of timeshare stays globally, by reaching 365 nights.{" "}
           </Typography>
 
-          <Typography fontWeight="500" fontSize="14px" mt={3}>
+          <Typography fontWeight="500" fontSize="14px" mt={3} mb={4} >
             They get to live around the world for free!Further discounts per
             tier achieved.
           </Typography>
         </Box>
 
         <Box
-          sx={{ padding: { xs: "70px 0px 20px 10px", sm: "30px 0 30px 50px" } }}
+          sx={{ padding: { xs: "70px 0px 20px 10px", sm: "100px 0 100px 100px" } }}
           borderBottom="1px solid lightgray"
         >
-          <Typography variant="h5" fontWeight="700">
-            Stay at our finest destinations
+          <Typography fontSize="20px" fontWeight="700" mb={1} >
+          How it works
           </Typography>
-          <Typography variant="h6" fontWeight="400">
-            Discover Switzerland’s best ski resorts and plan the perfect holiday
+          <Typography fontSize="13px" fontWeight="500" mb={3} >
+          Discover Switzerland’s best ski resorts and plan <br/> the perfect holiday
           </Typography>
 
           <Box

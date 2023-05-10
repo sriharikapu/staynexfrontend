@@ -9,7 +9,7 @@ const StaynexGlobal = () => {
       <Box sx={{ overflowX: "hidden" }}>
         <Box sx={{ position: "relative" }}>
           <Box width="100%">
-            <img src="assets/staynexglobal/stadium.svg" alt="" width="100%" />
+            <img src="assets/staynexglobal/stadium.svg" alt="" className="mainimages" />
           </Box>
           <Box
             width="100%"
@@ -37,12 +37,12 @@ const StaynexGlobal = () => {
               left: "0",
             }}
           >
-            <Typography variant="h5" fontWeight="700">
+            <Typography fontSize="28px" fontWeight="500">
               Global Partnerships
             </Typography>
             <Typography
               fontSize="14px"
-              fontWeight="300"
+              fontWeight="400"
               width="300px"
               textAlign="center"
             >
@@ -59,13 +59,11 @@ const StaynexGlobal = () => {
             >
               <Box display="flex" alignItems="center" gap="10px">
                 <img src="/assets/logowhite.svg" alt="logo" />
-                <Typography variant="h4" fontWeight="700">
-                  staynex
-                </Typography>
+                
               </Box>
               <CloseIcon />
               <img
-                src="/assets/arsenal.png"
+                src="/assets/arsenal.svg"
                 alt="arsenal"
                 width="80px"
                 height="80px"
@@ -81,12 +79,12 @@ const StaynexGlobal = () => {
             justifyContent="center"
             gap="20px"
             flex={1}
-            p={4}
           >
-            <Typography variant="h5" fontWeight="500">
+            <Box maxWidth="70%" margin="auto" >
+            <Typography fontSize="20px" fontWeight="600" mb={2} >
               Arsenal FC
             </Typography>
-            <Typography>
+            <Typography mb={2} fontSize="14px" fontWeight="400" >
               As the official partner of Arsenal FC, we are able to create
               Staynex x Arsenal Co-Branded NFTs. <br /> <br /> Where the NFT
               holders will get exclusive match tickets, Arsenal experiences
@@ -96,17 +94,18 @@ const StaynexGlobal = () => {
               million followers.
             </Typography>
             <img
-              src="/assets/arsenal.png"
+              src="/assets/arsenal.svg"
               alt="arsenal"
               width="60px"
               height="70px"
             />
+            </Box>
           </Box>
-          <Box flex={1} width="100%">
+          <Box flex={1} width="100%" mt={-0.07} >
             <img
               src="/assets/staynexglobal/player.svg"
               alt="player"
-              width="100%"
+              className="mainimages"
             />
           </Box>
         </Box>
@@ -116,7 +115,7 @@ const StaynexGlobal = () => {
             <img
               src="/assets/staynexglobal/redimg.svg"
               alt="red"
-              width="100%"
+              className="mainimages"
             />
           </Box>
           <Box
@@ -133,11 +132,11 @@ const StaynexGlobal = () => {
               left: "0",
             }}
           >
-            <Typography variant="h5" fontWeight="500">
+            <Typography fontSize="21px" fontWeight="500" mt={6} mb={1} >
               Staynex x Arsenal NFTs
             </Typography>
-            <Typography textAlign="center" width="320px">
-              Discover Switzerland’s best ski resorts and plan the perfect
+            <Typography fontSize="14px" fontWeight="300" textAlign="center">
+              Discover Switzerland’s best ski resorts and <br /> plan the perfect
               holiday
             </Typography>
             <Box
@@ -168,13 +167,12 @@ const StaynexGlobal = () => {
         </Box>
 
         <Box display="flex" sx={{ flexDirection: { xs: "column", sm: "row" } }}>
-          <Box position="relative">
+          <Box position="relative"  >
             <Box width="100%" height="100%" sx={{ background: "red" }}>
               <img
                 src="/assets/staynexglobal/redpattern.svg"
                 alt="pattern"
-                width="100%"
-                height="100%"
+                style={{display: 'block'}}
               />
             </Box>
             <Box
@@ -210,11 +208,12 @@ const StaynexGlobal = () => {
               </Box>
             </Box>
           </Box>
-          <Box width="100%">
+          <Box width="100%"  >
             <img
               src="/assets/staynexglobal/training.svg"
               alt="training"
               width="100%"
+              style={{display: 'block'}}
             />
           </Box>
         </Box>
@@ -225,6 +224,7 @@ const StaynexGlobal = () => {
               src="/assets/staynexglobal/img1.svg"
               alt="staynex"
               width="100%"
+              style={{display: 'block'}}
             />
           </Box>
           <Box flex={1} width="100%">
@@ -232,6 +232,7 @@ const StaynexGlobal = () => {
               src="/assets/staynexglobal/img2.svg"
               alt="staynex"
               width="100%"
+              style={{display: 'block'}}
             />
           </Box>
           <Box flex={1} width="100%">
@@ -239,6 +240,7 @@ const StaynexGlobal = () => {
               src="/assets/staynexglobal/img1.svg"
               alt="staynex"
               width="100%"
+              style={{display: 'block'}}
             />
           </Box>
         </Box>
@@ -250,38 +252,44 @@ const StaynexGlobal = () => {
           justifyContent="space-between"
           padding="40px 0"
           sx={{ background: "#320F0F", color: "#fff" }}
-          height="400px"
+          height="500px"
         >
           <Box
             display="flex"
             alignItems="center"
             borderBottom="1px solid lightgray"
             p={4}
+            gap="30px"
             sx={{ flexDirection: { xs: "column", sm: "row" } }}
           >
-            <Box display="flex" alignItems="center" gap="10px">
+            <Box display="flex" alignItems="center" gap="5px">
               <img src="/assets/staynexglobal/done.svg" alt="done" />
-              <Typography>Get exposure of 100 million fans</Typography>
+              <Typography fontSize="14px" fontWeight="400" >Get exposure of 100 million fans</Typography>
             </Box>
-            <Box display="flex" alignItems="center" gap="10px">
+            <Box display="flex" alignItems="center" gap="5px">
               <img src="/assets/staynexglobal/done.svg" alt="done" />
-              <Typography>Get exposure of 100 million fans</Typography>
+              <Typography fontSize="14px" fontWeight="400" >Bringing together hospitality and football</Typography>
             </Box>
-            <Box display="flex" alignItems="center" gap="10px">
+            <Box display="flex" alignItems="center" gap="5px">
               <img src="/assets/staynexglobal/done.svg" alt="done" />
-              <Typography>Get exposure of 100 million fans</Typography>
+              <Typography fontSize="14px" fontWeight="400" >Offer once in a lifetime experiences</Typography>
             </Box>
           </Box>
-          <Box mt={2}>
+          <Box mt={2} p={1} >
             <Typography
               textAlign="center"
-              sx={{ width: { xs: "400px", sm: "700px" } }}
+              fontSize="21px"
+              fontWeight="600"
+              sx={{ width: { xs: "100%", sm: "700px" } }}
+              mb={2}
             >
               The full Arsenal experience
             </Typography>
             <Typography
               textAlign="center"
-              sx={{ width: { xs: "400px", sm: "700px" } }}
+              fontSize="14px"
+              fontWeight="300"
+              sx={{ width: { xs: "100%", sm: "700px" } }}
             >
               Get ready for a truly unforgettable experience. With match tickets
               to see the Gunners in action, exclusive experiences, and the

@@ -1,6 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import { useState } from "react";
 import PassModal from "../../components/PassModal";
+import { MainButton } from "../../components/Buttons";
 
 const SinglePass = ({ pass }) => {
   const [openModal, setOpenModal] = useState(false);
@@ -98,10 +99,10 @@ const SinglePass = ({ pass }) => {
 
         <Box display="flex" gap="10px" mt={2} >
             <Box flex={1} >
-            <Button variant="contained" color="gray" sx={{color: '#fff'}} fullWidth>Swap</Button>
+            <MainButton variant="contained" text="Swap" bgcolor="gray" color="#fff" width="100%" />
             </Box>
             <Box flex={1} >
-            <Button variant="contained" color="orange" sx={{color: '#fff'}} fullWidth>Redeem</Button>
+            <MainButton variant="contained" text="Redeem" bgcolor="orange" color="#fff" width="100%" />
             </Box>
         </Box>
       </Box>
