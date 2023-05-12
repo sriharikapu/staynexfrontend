@@ -105,7 +105,7 @@ const StaynexClub = () => {
           textAlign="center"
           sx={{ background: "#F9F9F1", padding: "60px 0" }}
         >
-          <Typography variant="h5" fontWeight="700" mt={4} >
+          <Typography variant="h5" fontWeight="700" mt={4}>
             Staynex Explorer Program (Q1 2023)
           </Typography>
           <Typography fontWeight="400" fontSize="14px" mb={6} mt={2}>
@@ -115,14 +115,14 @@ const StaynexClub = () => {
           <Box
             sx={{
               padding: "0 60px",
-              borderBottom: "1px solid lightgray",
+              borderBottom: "3px solid lightgray",
             }}
           >
             <Box
               display="flex"
               justifyContent="space-between"
               sx={{
-                maxWidth: {xs: "100%", sm: "80%"},
+                maxWidth: { xs: "100%", sm: "80%" },
                 flexDirection: { xs: "column", md: "row" },
                 alignItems: { xs: "center", md: "end" },
                 margin: "auto",
@@ -144,21 +144,24 @@ const StaynexClub = () => {
             of timeshare stays globally, by reaching 365 nights.{" "}
           </Typography>
 
-          <Typography fontWeight="500" fontSize="14px" mt={3} mb={4} >
+          <Typography fontWeight="500" fontSize="14px" mt={3} mb={4}>
             They get to live around the world for free!Further discounts per
             tier achieved.
           </Typography>
         </Box>
 
         <Box
-          sx={{ padding: { xs: "70px 0px 20px 10px", sm: "100px 0 100px 100px" } }}
+          sx={{
+            padding: { xs: "70px 0px 20px 10px", sm: "100px 0 100px 100px" },
+          }}
           borderBottom="1px solid lightgray"
         >
-          <Typography fontSize="20px" fontWeight="700" mb={1} >
-          How it works
+          <Typography fontSize="20px" fontWeight="700" mb={1}>
+            How it works
           </Typography>
-          <Typography fontSize="13px" fontWeight="500" mb={3} >
-          Discover Switzerland’s best ski resorts and plan <br/> the perfect holiday
+          <Typography fontSize="13px" fontWeight="500" mb={3}>
+            Discover Switzerland’s best ski resorts and plan <br /> the perfect
+            holiday
           </Typography>
 
           <Box
@@ -209,12 +212,12 @@ const StaynexClub = () => {
             p={4}
             flex={2}
           >
-            <Typography variant="h5" fontWeight="700">
+            <Typography fontSize="20px" fontWeight="600" ml={16}>
               Frequently asked questions
             </Typography>
-            <Typography>
-              Discover Switzerland’s best ski resorts and plan the perfect
-              holiday
+            <Typography fontSize="13px" fontWeight="400" ml={16}>
+              Discover Switzerland’s best ski resorts and plan the <br />{" "}
+              perfect holiday
             </Typography>
           </Box>
           <Box flex={3} p={4}>

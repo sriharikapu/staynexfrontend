@@ -12,7 +12,7 @@ import Template from "../components/Template";
 
 const Home = () => {
   const [openModal, setOpenModal] = useState(false);
-  const [numberImg, setNumberImg] = useState(1)
+  const [numberImg, setNumberImg] = useState(1);
   const scrollRef = useRef(null);
 
   const handleHorizantalScroll = (element, speed, distance, step) => {
@@ -24,15 +24,14 @@ const Home = () => {
         clearInterval(slideTimer);
       }
     }, speed);
-  };  
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if(numberImg === 3) {
-        setNumberImg(1)
-      }
-      else {
-        setNumberImg(numberImg + 1)
+      if (numberImg === 3) {
+        setNumberImg(1);
+      } else {
+        setNumberImg(numberImg + 1);
       }
     }, 3000);
     return () => {
@@ -43,45 +42,50 @@ const Home = () => {
   let lastscrollvalue;
 
   return (
-    <div style={{maxHeight: '100vh', overflow: 'scroll'}} className="refcontainer" onScroll={() => {
-      let a = document.querySelector('.refcontainer'); 
-  
-      if (lastscrollvalue === undefined) {
-          lastscrollvalue = a.scrollTop;
-      } else if (a.scrollTop > lastscrollvalue) {
-        lastscrollvalue = a.scrollTop;
-        handleHorizantalScroll(scrollRef.current, 10, 0.1, -10)
-      } else if (a.scrollTop < lastscrollvalue) {
-        lastscrollvalue = a.scrollTop;
-        handleHorizantalScroll(scrollRef.current, 10, 0.1, 10)  
-      }}} >
-    <Template>
-      <div onClick={() => setOpenModal(false)} >
-        <Box
-          display="flex"
-          sx={{ flexDirection: { xs: "column", md: "row" } }}
-        >
-          <Box flex={2.5} sx={{ background: "#EAE2DB", maxHeight: '348px' }}>
-            <HeaderViewer />
-          </Box>
+    <div
+      style={{ maxHeight: "100vh", overflow: "scroll" }}
+      className="refcontainer"
+      onScroll={() => {
+        let a = document.querySelector(".refcontainer");
 
-          <Box flex={7.5} position="relative" >
-            <img
-              src={`/assets/headerimg${numberImg}.svg`}
-              alt="headerimg"
-              style={{display: 'block', minWidth: '100%'}}
-            />
-            <HeaderSearch openModal={openModal} setOpenModal={setOpenModal} />
+        if (lastscrollvalue === undefined) {
+          lastscrollvalue = a.scrollTop;
+        } else if (a.scrollTop > lastscrollvalue) {
+          lastscrollvalue = a.scrollTop;
+          handleHorizantalScroll(scrollRef.current, 10, 0.1, -10);
+        } else if (a.scrollTop < lastscrollvalue) {
+          lastscrollvalue = a.scrollTop;
+          handleHorizantalScroll(scrollRef.current, 10, 0.1, 10);
+        }
+      }}
+    >
+      <Template>
+        <div onClick={() => setOpenModal(false)}>
+          <Box
+            display="flex"
+            sx={{ flexDirection: { xs: "column", lg: "row" } }}
+          >
+            <Box flex={2.5} sx={{ background: "#EAE2DB" }}>
+              <HeaderViewer />
+            </Box>
+
+            <Box flex={7.5} position="relative">
+              <img
+                src={`/assets/headerimg${numberImg}.svg`}
+                alt="headerimg"
+                style={{ display: "block", minWidth: "100%" }}
+              />
+              <HeaderSearch openModal={openModal} setOpenModal={setOpenModal} />
+            </Box>
           </Box>
-        </Box>
-        <HomeHotels />
-        <FavouiteDestination scrollRef={scrollRef} />
-        <Fitness />
-        <HomeEvents />
-        <StayConnected />
-        <Footer />
-      </div>
-    </Template>
+          <HomeHotels />
+          <FavouiteDestination scrollRef={scrollRef} />
+          <Fitness />
+          <HomeEvents />
+          <StayConnected />
+          <Footer />
+        </div>
+      </Template>
     </div>
   );
 };

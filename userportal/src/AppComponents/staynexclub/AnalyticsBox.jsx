@@ -26,21 +26,24 @@ const AnalyticsBox = ({ name, days, nights, fullBox, setFullBox }) => {
           </Stack>
         </Stack>
         {fullBox === name && (
-          <Box p={1} >
-            <Box display="flex" alignItems="center" gap="10px" mb={1} >
+          <Box p={1}>
+            <Box display="flex" alignItems="center" gap="10px" mb={1}>
               <CheckCircleOutlinedIcon />
-              <Typography variant="p" fontSize="12px" >
+              <Typography variant="p" fontSize="12px">
                 7.5% Discounts - Applied to the price before taxes & charges
               </Typography>
             </Box>
-            <Box display="flex" alignItems="center" gap="10px" >
+            <Box display="flex" alignItems="center" gap="10px">
               <CheckCircleOutlinedIcon />
-              <Typography variant="p" fontSize="12px" >Staking Bonuses = 20%</Typography>
+              <Typography variant="p" fontSize="12px">
+                Staking Bonuses = 20%
+              </Typography>
             </Box>
           </Box>
         )}
       </div>
-      <div className="v_line"></div>
+      <div className={fullBox === name ? "ball" : ""}></div>
+      <div className={fullBox === name ? "v_line_orange" : "v_line"}></div>
     </Stack>
   );
 };

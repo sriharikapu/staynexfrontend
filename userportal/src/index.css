@@ -1,11 +1,11 @@
 .headerinput {
   border: none;
   outline: none;
-  background: #EBEBEB;
+  background: #ebebeb;
   padding: 8px 15px;
   width: 300px;
   border-radius: 20px;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   opacity: 48%;
 }
 
@@ -146,11 +146,21 @@
 
 .fullboxtext {
   color: #fff;
-  background: #E55735;
+  background: #e55735;
   width: 250px;
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background: #ff672d;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  border-radius: 50%;
 }
 
 .boxtext {
@@ -160,7 +170,15 @@
 
 .v_line {
   border-left: 2px solid lightgray;
-  height: 35px;
+  height: 40px;
+  margin: 0 auto;
+  width: 2px;
+  margin-top: 8px;
+}
+
+.v_line_orange {
+  border-left: 3px solid #ff672d;
+  height: 40px;
   margin: 0 auto;
   width: 2px;
   margin-top: 8px;
@@ -170,7 +188,7 @@
   border: 1px solid lightgray;
   outline: none;
   border-radius: 5px;
-  padding: 8px;
+  padding: 15px;
   margin-bottom: 2px;
 }
 
@@ -194,7 +212,7 @@
 }
 
 .hotelimg {
-  transition: transform .1s;
+  transition: transform 0.1s;
   height: fit-content;
 }
 
