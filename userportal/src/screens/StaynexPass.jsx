@@ -3,6 +3,7 @@ import Template from "../components/Template";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { nftlist, passiconlist } from "../constant/staynexpass";
 import Footer from "../components/Footer";
+import { MainButton } from "../components/Buttons";
 
 const StaynexPass = () => {
   return (
@@ -30,7 +31,7 @@ const StaynexPass = () => {
             alt=""
             width="100%"
             height="650px"
-            style={{display: 'block'}}
+            style={{ display: "block" }}
           />
           <Box
             width="100%"
@@ -75,13 +76,14 @@ const StaynexPass = () => {
               />
               <Typography fontSize="18px" fontWeight="400" textAlign="center">
                 We're proud to announce Staynex as Arsenal FC's Official Hotel
-                and Resort <br/> Membership NFT Partner. Stay tuned to enjoy an
+                and Resort <br /> Membership NFT Partner. Stay tuned to enjoy an
                 experience of a lifetime!
               </Typography>
             </Box>
             <Box
               display="flex"
               alignItems="center"
+              ƒ
               gap="17px"
               sx={{ flexDirection: { xs: "column", sm: "row" } }}
               mt={4}
@@ -142,7 +144,7 @@ const StaynexPass = () => {
             display="flex"
             sx={{ flexDirection: { xs: "column-reverse", sm: "row" } }}
           >
-            <Box flex={3} maxWidth="100%" position="relative" >
+            <Box flex={3} maxWidth="100%" position="relative">
               <img
                 src="/assets/staynexpass/pattern.svg"
                 alt="pattern"
@@ -186,15 +188,21 @@ const StaynexPass = () => {
                       <Button
                         variant="contained"
                         color="orange"
-                        sx={{ width: "200px", lineHeight: "15px", textAlign: 'left' }}
+                        sx={{
+                          width: "200px",
+                          lineHeight: "15px",
+                          textAlign: "left",
+                        }}
                       >
                         Download Staynex's Official Press Kit
                       </Button>
                       <Box display="flex" alignItems="center" gap="10px">
                         <TwitterIcon />
                         <Box>
-                          <Typography mb={-1} fontWeight="500" >Follow us</Typography>
-                          <Typography fontWeight="600" >@staynexcom</Typography>
+                          <Typography mb={-1} fontWeight="500">
+                            Follow us
+                          </Typography>
+                          <Typography fontWeight="600">@staynexcom</Typography>
                         </Box>
                       </Box>
                     </Box>
@@ -203,7 +211,7 @@ const StaynexPass = () => {
               </Box>
             </Box>
 
-            <Box flex={2} maxWidth="100%"   >
+            <Box flex={2} maxWidth="100%">
               <img
                 src="/assets/staynexpass/house.svg"
                 alt="back"
@@ -222,7 +230,7 @@ const StaynexPass = () => {
             sx={{ background: "#FF672D", color: "#fff" }}
           >
             <Box display="flex" justifyContent="flex-start" mb={3} mt={2}>
-              <Typography variant="h5" fontWeight="500"  >
+              <Typography variant="h5" fontWeight="500">
                 Imagine an NFT that allows you to
               </Typography>
             </Box>
@@ -246,7 +254,10 @@ const StaynexPass = () => {
           <Box
             display="flex"
             alignItems="center"
-            sx={{ flexDirection: { xs: "column-reverse", md: "row" }, background: '#F7F6F5'}}
+            sx={{
+              flexDirection: { xs: "column-reverse", md: "row" },
+              background: "#F7F6F5",
+            }}
             pt={10}
           >
             <Box flex={2.5} maxWidth="100%">
@@ -285,41 +296,54 @@ const StaynexPass = () => {
                 {passiconlist.map((icon) => (
                   <Box maxWidth="250px" mb={4}>
                     <img src={icon.src} alt="icon" />
-                    <Typography fontSize="14px" fontWeight="700" mt={1} >{icon.title}</Typography>
-                    <Typography fontSize="10px" mt={1} >{icon.desc}</Typography>
+                    <Typography fontSize="14px" fontWeight="700" mt={1}>
+                      {icon.title}
+                    </Typography>
+                    <Typography fontSize="10px" mt={1}>
+                      {icon.desc}
+                    </Typography>
                   </Box>
                 ))}
               </Box>
             </Box>
           </Box>
 
-          <Box display="flex" sx={{flexDirection: {xs: 'column-reverse', sm: 'row'}}} >
+          <Box
+            display="flex"
+            sx={{ flexDirection: { xs: "column-reverse", sm: "row" } }}
+          >
             <Box
               display="flex"
               alignItems="center"
               justifyContent="center"
               flexDirection="column"
               flex={2.5}
-              sx={{ background: "#0E1F22",zIndex: '-23',  }}
+              sx={{ background: "#0E1F22", zIndex: "-23" }}
             >
               <Box
                 display="flex"
                 flexDirection="column"
-                sx={{ color: "#fff", }}
+                sx={{ color: "#fff" }}
                 maxWidth="400px"
                 p={4}
               >
-                <Typography variant="h4" fontWeight="500">
-                  Browse our resorts & properties
+                <Typography fontSize="27px" fontWeight="500">
+                  Browse our resorts <br /> & properties
                 </Typography>
-                <Typography fontSize="20px">
-                  Discover Switzerland’s best ski resorts and plan the perfect
-                  holiday
+                <Typography fontSize="15px" fontWeight="400" mb={3}>
+                  Discover Switzerland’s best ski <br /> resorts and plan the
+                  perfect <br /> holiday
                 </Typography>
-                <Button variant="contained" color="white" sx={{color: '#000'}} >Explore</Button>
+                <MainButton
+                  text="Explore"
+                  variant="contained"
+                  color="#000"
+                  bgcolor="white"
+                  width="100px"
+                />
               </Box>
             </Box>
-            <Box flex={3} width="100%" zIndex={-3344} >
+            <Box flex={3} width="100%" zIndex={-3344}>
               <img
                 src="/assets/staynexpass/boatimg.svg"
                 alt="boat"

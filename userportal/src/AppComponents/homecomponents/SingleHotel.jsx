@@ -8,13 +8,13 @@ const SingleHotel = ({ hotel }) => {
   return (
     <Link to={`/single_hotel/${hotel.id}`} className="link">
       <Box width="281px" mt={1} mr={1}>
-        <Box maxWidth="281px" maxHeight="320px" overflow="hidden" >
-        <img src={hotel.src} className="hotelimg" alt="hotelimg" />
+        <Box maxWidth="281px" maxHeight="320px" overflow="hidden">
+          <img src={hotel.src} className="hotelimg" alt="hotelimg" />
         </Box>
-        <Typography variant="h6" fontWeight="500">
+        <Typography fontSize="15px" fontWeight="500" mt={2}>
           {hotel.name}
         </Typography>
-        <Typography fontSize="14px" fontWeight="500">
+        <Typography fontSize="12px" fontWeight="400">
           {hotel.location}
         </Typography>
         <Box
@@ -26,31 +26,33 @@ const SingleHotel = ({ hotel }) => {
           padding="10px 0"
           mt={2}
         >
-          <Box display="flex" alignItems="center" gap="5px" >
-            <HotelIcon fontSize="12px" />
+          <Box display="flex" alignItems="center" gap="5px">
+            <HotelIcon fontSize="14px" />
             <Typography
-              fontSize="12px"
-              fontWeight="500"
+              fontSize="10px"
+              fontWeight="400"
             >{`${hotel.bedroom} Bedrooms`}</Typography>
           </Box>
           <Box display="flex" alignItems="center" gap="5px">
             <ShowerIcon fontSize="12px" />
             <Typography
-              fontSize="12px"
-              fontWeight="500"
+              fontSize="10px"
+              fontWeight="400"
             >{`${hotel.bathroom} Bathrooms`}</Typography>
           </Box>
           <Box display="flex" alignItems="center" gap="5px">
             <SquareFootIcon fontSize="12px" />
             <Typography
-              fontSize="12px"
-              fontWeight="500"
+              fontSize="10px"
+              fontWeight="400"
             >{`${hotel.sqft}sqft`}</Typography>
           </Box>
         </Box>
 
         <Box display="flex" alignItems="center" gap="5px" mt={1.5}>
-          <Typography fontWeight="400" fontSize="12px" >From</Typography>
+          <Typography fontWeight="400" fontSize="12px">
+            From
+          </Typography>
           <Typography
             fontSize="14px"
             fontWeight="700"

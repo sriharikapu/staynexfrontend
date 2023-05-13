@@ -5,8 +5,13 @@ const SingleEvent = ({ hotel }) => {
   return (
     <Link className="link">
       <Box mt={1}>
-        <Box maxWidth="100%" overflow="hidden" >
-        <img src={hotel.src} alt="hotelimg" width="100%" className="hotelimg" />
+        <Box maxWidth="100%" overflow="hidden">
+          <img
+            src={hotel.src}
+            alt="hotelimg"
+            width="100%"
+            className="hotelimg"
+          />
         </Box>
         <Typography fontSize="15px" fontWeight="500">
           {hotel.title}

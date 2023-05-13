@@ -9,7 +9,11 @@ const StaynexGlobal = () => {
       <Box sx={{ overflowX: "hidden" }}>
         <Box sx={{ position: "relative" }}>
           <Box width="100%">
-            <img src="assets/staynexglobal/stadium.svg" alt="" className="mainimages" />
+            <img
+              src="assets/staynexglobal/stadium.svg"
+              alt=""
+              className="mainimages"
+            />
           </Box>
           <Box
             width="100%"
@@ -59,7 +63,6 @@ const StaynexGlobal = () => {
             >
               <Box display="flex" alignItems="center" gap="10px">
                 <img src="/assets/logowhite.svg" alt="logo" />
-                
               </Box>
               <CloseIcon />
               <img
@@ -80,28 +83,32 @@ const StaynexGlobal = () => {
             gap="20px"
             flex={1}
           >
-            <Box maxWidth="70%" margin="auto" >
-            <Typography fontSize="20px" fontWeight="600" mb={2} >
-              Arsenal FC
-            </Typography>
-            <Typography mb={2} fontSize="14px" fontWeight="400" >
-              As the official partner of Arsenal FC, we are able to create
-              Staynex x Arsenal Co-Branded NFTs. <br /> <br /> Where the NFT
-              holders will get exclusive match tickets, Arsenal experiences
-              (meet the players), memorabilia and a uniquely designed Arsenal
-              NFT. <br /> <br /> Participating hotels will get massive exposure
-              through co-marketing campaigns and to leverage of the club’s 100
-              million followers.
-            </Typography>
-            <img
-              src="/assets/arsenal.svg"
-              alt="arsenal"
-              width="60px"
-              height="70px"
-            />
+            <Box maxWidth="65%" margin="auto">
+              <Typography fontSize="20px" fontWeight="600" mb={2}>
+                Arsenal FC
+              </Typography>
+              <Typography mb={2} fontSize="14px" fontWeight="400">
+                As the official partner of Arsenal FC, we are able to create
+                Staynex x Arsenal Co-Branded NFTs. <br /> <br /> Where the NFT
+                holders will get exclusive match tickets, Arsenal experiences
+                (meet the players), memorabilia and a uniquely designed Arsenal
+                NFT. <br /> <br /> Participating hotels will get massive
+                exposure through co-marketing campaigns and to leverage of the
+                club’s 100 million followers.
+              </Typography>
+
+              <Typography fontSize="14px" fontWeight="600" mb={2} mt={2}>
+                Official Hotel & Resort Membership Partner of Arsenal FC
+              </Typography>
+              <img
+                src="/assets/arsenal.svg"
+                alt="arsenal"
+                width="60px"
+                height="70px"
+              />
             </Box>
           </Box>
-          <Box flex={1} width="100%" mt={-0.07} >
+          <Box flex={1} width="100%" mt={-0.07}>
             <img
               src="/assets/staynexglobal/player.svg"
               alt="player"
@@ -132,12 +139,12 @@ const StaynexGlobal = () => {
               left: "0",
             }}
           >
-            <Typography fontSize="21px" fontWeight="500" mt={6} mb={1} >
+            <Typography fontSize="21px" fontWeight="500" mt={6} mb={1}>
               Staynex x Arsenal NFTs
             </Typography>
             <Typography fontSize="14px" fontWeight="300" textAlign="center">
-              Discover Switzerland’s best ski resorts and <br /> plan the perfect
-              holiday
+              Discover Switzerland’s best ski resorts and <br /> plan the
+              perfect holiday
             </Typography>
             <Box
               display="flex"
@@ -167,14 +174,8 @@ const StaynexGlobal = () => {
         </Box>
 
         <Box display="flex" sx={{ flexDirection: { xs: "column", sm: "row" } }}>
-          <Box position="relative"  >
-            <Box width="100%" height="100%" sx={{ background: "red" }}>
-              <img
-                src="/assets/staynexglobal/redpattern.svg"
-                alt="pattern"
-                style={{display: 'block'}}
-              />
-            </Box>
+          <Box position="relative" flex={1.5}>
+            <Box width="100%" height="100%" sx={{ background: "red" }}></Box>
             <Box
               width="100%"
               height="100%"
@@ -208,12 +209,12 @@ const StaynexGlobal = () => {
               </Box>
             </Box>
           </Box>
-          <Box width="100%"  >
+          <Box width="100%" flex={3}>
             <img
               src="/assets/staynexglobal/training.svg"
               alt="training"
               width="100%"
-              style={{display: 'block'}}
+              style={{ display: "block" }}
             />
           </Box>
         </Box>
@@ -224,7 +225,7 @@ const StaynexGlobal = () => {
               src="/assets/staynexglobal/img1.svg"
               alt="staynex"
               width="100%"
-              style={{display: 'block'}}
+              style={{ display: "block" }}
             />
           </Box>
           <Box flex={1} width="100%">
@@ -232,7 +233,7 @@ const StaynexGlobal = () => {
               src="/assets/staynexglobal/img2.svg"
               alt="staynex"
               width="100%"
-              style={{display: 'block'}}
+              style={{ display: "block" }}
             />
           </Box>
           <Box flex={1} width="100%">
@@ -240,7 +241,7 @@ const StaynexGlobal = () => {
               src="/assets/staynexglobal/img1.svg"
               alt="staynex"
               width="100%"
-              style={{display: 'block'}}
+              style={{ display: "block" }}
             />
           </Box>
         </Box>
@@ -249,7 +250,7 @@ const StaynexGlobal = () => {
           display="flex"
           alignItems="center"
           flexDirection="column"
-          justifyContent="space-between"
+          justifyContent="space-evenly"
           padding="40px 0"
           sx={{ background: "#320F0F", color: "#fff" }}
           height="500px"
@@ -264,18 +265,24 @@ const StaynexGlobal = () => {
           >
             <Box display="flex" alignItems="center" gap="5px">
               <img src="/assets/staynexglobal/done.svg" alt="done" />
-              <Typography fontSize="14px" fontWeight="400" >Get exposure of 100 million fans</Typography>
+              <Typography fontSize="14px" fontWeight="400">
+                Get exposure of 100 million fans
+              </Typography>
             </Box>
             <Box display="flex" alignItems="center" gap="5px">
               <img src="/assets/staynexglobal/done.svg" alt="done" />
-              <Typography fontSize="14px" fontWeight="400" >Bringing together hospitality and football</Typography>
+              <Typography fontSize="14px" fontWeight="400">
+                Bringing together hospitality and football
+              </Typography>
             </Box>
             <Box display="flex" alignItems="center" gap="5px">
               <img src="/assets/staynexglobal/done.svg" alt="done" />
-              <Typography fontSize="14px" fontWeight="400" >Offer once in a lifetime experiences</Typography>
+              <Typography fontSize="14px" fontWeight="400">
+                Offer once in a lifetime experiences
+              </Typography>
             </Box>
           </Box>
-          <Box mt={2} p={1} >
+          <Box mt={2} p={1}>
             <Typography
               textAlign="center"
               fontSize="21px"
